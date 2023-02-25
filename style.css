@@ -1,0 +1,144 @@
+/*- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.main-container, .thank-you{
+  background-color: hsl(213, 19%, 18%);
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 400px;
+}
+
+.main-container img{
+  background-color: hsl(217, 19%, 23%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.main-container h2{
+  color: white;
+  margin: 1.5rem 0 1rem
+
+}
+
+p{
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.main-container p{
+  margin-bottom: 1.5rem;
+}
+
+.main-container ul{
+  list-style-type: none;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+}
+
+.main-container ul li button{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(217, 19%, 23%);
+  color: white;
+  padding-top: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.main-container ul li button:hover{
+  background-color: hsl(217, 12%, 63%);
+}
+
+.main-container ul li button:focus{
+  background-color: hsl(25, 97%, 53%);
+}
+
+button{
+  font-family: inherit;
+}
+
+.btn-submit{
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  width: 100%;
+  padding: 0.8rem 0 0.7rem;
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.btn-submit:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thank-you img{
+  display: block;
+  margin: 0 auto 2rem
+}
+
+.thank-you p.selected{
+  background-color: hsl(214, 22%, 25%);
+  border-radius: 2rem;
+  color: hsl(25, 97%, 53%);
+  padding: 0.3rem 0.6rem 0.1rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.thank-you h2{
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.thank-you p{
+  margin-bottom: 2rem;
+  padding: 0 0.3rem;
+}
+
+.hidden{
+  display: none;
+}
